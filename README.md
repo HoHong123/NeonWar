@@ -29,22 +29,27 @@ AR Core Multi play game Project
         <ol>Unity 3D</ol>
       </li>
       <br><br>
-      <li><b>게임 씬</b><br>
-        - 메뉴 스크린을 터치하면 로그인 창을 통해 게임 화면으로 전환<br>
-        <img src="Images/로그인.jpg" width="50%"><img src="Images/메뉴.jpg" width="50%"><br>
+      <li><b>게임</b><br>
+        - 메인 메뉴에서 게임 시작을 통해 Photon서버에 Room을 생성<br>
+        <img src="ScreenShot/Menu.jpg" width="50%"><img src="ScreenShot/Prepare.jpg" width="50%"><br>
       </li>
       <br>
-      <li><b>데이터 호출/저장</b><br>
-      - 게임 로그인 후 유저의 이름을 기본키로 점수 증가 값, 구매한 배경의 수, 보유 점수 등 정보를 가진 데이터 호출<br>
-      - 게임 씬 로드 후에는 다음 업그레이드에 필요한 값을 저장하고 있는 데이터 호출<br>
-      - 게임을 종료하거나 업그레이드, 배경 구매가 이루어지면 다음 작업 시작<br>
-        1. 유저 데이터는 업그레이드 성공으로 얻은 값을 해당 데이터에 저장<br>
-        2. 게임 데이터는 업그레이드 성공 시, 다음 업그레이드에 필요한 값이나 배경을 지목하여 데이터 저장<br>
-      <img src="Images/데이터저장법.png" width="80%"><br>
+      <li><b>카메라 지면 인식</b><br>
+      - 룸 생성 후 카메라로 지면을 인식하여 게임 오브젝트의 초기 위치 할당<br>
+      <img src="ScreenShot/Room.PNG" width="80%"><br>
       </li>
       <br>
-      <li><b>사이툴을 통한 그래픽 제작 및 외부 폰트 적용</b><br>
-      - 게임 내부에 사용되는 그래픽 자체 제작<br>
+      <li><b>대전</b><br>
+      - 상대방이 입장하면 자동으로 5초 카운터 후 게임 시작<br>
+      - 각 플레이어는 구체의 행성이 주어지며 행성의 체력이 0이되어 파괴되면 패배<br>
+      - 주변의 상자를 클릭하면 색상이 변하며 해당 색상의 반대되는 플레이어의 행성을 텀을 두고 자동 공격<br>
+      <img src="ScreenShot/Fight.PNG" width="80%"><br>
+      </li>
+      <br>
+      <li><b>종료</b><br>
+      - 둘 중 하나의 행성이 먼저 파괴되면 승자를 알리는 UI 출력<br>
+      - 짧은 시간 뒤 메인 메뉴로 강제 복귀<br>
+      <img src="ScreenShot/End.PNG" width="80%"><br>
       </li>
     </ol>
   </li>
