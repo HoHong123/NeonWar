@@ -5,7 +5,7 @@ AR Core Multi play game Project
 <b>#Project Member :</b> 2 Programmers<br>
 <b>#Language :</b> C#<br>
 <b>#Platform :</b> Android<br>
-<b>#Date :</b> 2016<br>
+<b>#Date :</b> 2017<br>
 <b>#Video Link :</b> https://youtu.be/r5G2s0cCwv8<br>
 </article>
 <br>
